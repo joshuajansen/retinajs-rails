@@ -52,21 +52,20 @@ For example:
 
 ```scss
 .logo {
-  @include at2x('logo', 'png', 200px, 100px);
+  @include retina('logo.png');
 }
 ```
 
-will compile to:
+will compile to something that resembles:
 
 ```scss
 .logo {
-  background-image: url('/assets/logo.png');
+  background-image: url('logo.png');
 }
 
 @media all and (-webkit-min-device-pixel-ratio: 1.5) {
   .logo {
-    background-image: url('/assets/logo@2x.png');
-    background-size: 200px 100px;
+    background-image: url('logo@2x.png');
   }
 }
 ```
