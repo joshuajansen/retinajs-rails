@@ -8,7 +8,7 @@ Retina.js is an awesome and simple plugin for rendering retina images for displa
 
 Add this line to your application's Gemfile:
 
-    gem "retinajs-rails", "~> 2.1"
+    gem "retinajs-rails", "~> 2.1.1"
 
 And then execute:
 
