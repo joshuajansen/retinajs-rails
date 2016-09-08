@@ -33,9 +33,9 @@ image_tag "logo.png"
 image_tag_with_at2x "logo.png"
 ```
 
-This will output the HTML similar to::
+This will output the HTML similar to:
 ```html
-<img data-at2x="/assets/logo@2x.png" src="/assets/logo.png">
+<img data-rjs="/assets/logo@2x.png" src="/assets/logo.png">
 ```
 
 ### SCSS mixin
