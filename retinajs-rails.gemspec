@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |gem|
   gem.name          = 'retinajs-rails'
-  gem.version       = '2.1.2'
+  gem.version       = '2.1.3'
   gem.date          = Date.today
   gem.authors       = ["Joshua Jansen"]
   gem.email         = ["joshuajansen88@gmail.com"]
