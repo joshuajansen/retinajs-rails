@@ -3,7 +3,6 @@
 Gem::Specification.new do |gem|
   gem.name          = 'retinajs-rails'
   gem.version       = '2.1.3'
-  gem.date          = Date.today
   gem.authors       = ["Joshua Jansen"]
   gem.email         = ["joshuajansen88@gmail.com"]
   gem.description   = %q{Adds retina.js assets and image helpers to your Rails app}
