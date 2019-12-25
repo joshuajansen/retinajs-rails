@@ -24,14 +24,14 @@
   /*
    * Set a base background for 1x environments.
    */
-  background: url(@path) @extras;
+  background: image-url(@path) @extras;
   background-size: @size;
 
   /*
    * Create an @2x-ish media query.
    */
   @media @lowretina {
-    background      : url(@2xpath) @extras;
+    background      : image-url(@2xpath) @extras;
     background-size : @size;
   }
 
@@ -44,7 +44,7 @@
       @retinapath: ~`@{path}.replace(/\.\w+$/, function(match) { return "@@{env}x" + match; })`;
       @media (-webkit-min-device-pixel-ratio: @env),
              (min-resolution: @env * 96dpi) {
-               background      : url(@retinapath) @extras;
+               background      : image-url(@retinapath) @extras;
                background-size : @size;
       }
       .loop((@env + 1));    // next iteration
